@@ -18,17 +18,28 @@ public class AttractionAdapter extends ArrayAdapter {
     //Display lists of attractions depending on their type
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder viewHolder=new ViewHolder();
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.list_item, parent, false);
+            viewHolder.imageView=convertView.findViewById(R.id.image_item);
+            viewHolder.name=convertView.findViewById(R.id.text_item_name);
+            viewHolder.location=convertView.findViewById(R.id.text_item_location);
+            convertView.setTag(viewHolder);
         }
+        viewHolder=(ViewHolder) convertView.getTag();
         Attraction attraction = (Attraction) getItem(position);
-        ImageView imageView = convertView.findViewById(R.id.image_item);
-        TextView name = convertView.findViewById(R.id.text_item_name);
-        TextView location = convertView.findViewById(R.id.text_item_location);
-        imageView.setImageResource(attraction.getImage());
-        name.setText(attraction.getName());
-        location.setText(attraction.getLocation());
+        if (attraction!=null){
+            viewHolder.imageView.setImageResource(attraction.getImage());
+            viewHolder.name.setText(attraction.getName());
+            viewHolder.location.setText(attraction.getLocation());
+        }
+
         return convertView;
+    }
+    static class ViewHolder {
+        ImageView imageView ;
+        TextView name ;
+        TextView location ;
     }
 }
