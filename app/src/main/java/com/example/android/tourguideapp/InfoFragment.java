@@ -59,7 +59,7 @@ public class InfoFragment extends Fragment {
         location.setText(attraction.getLocation());
         //Display "24 hours" if open for 24 hours
         if (attraction.getOpening() == attraction.getClosing()) {
-            opening.setText("Open 24 hours");
+            opening.setText(R.string.open_24_hours);
             hyphen.setVisibility(View.GONE);
             closing.setVisibility(View.GONE);
         } else {

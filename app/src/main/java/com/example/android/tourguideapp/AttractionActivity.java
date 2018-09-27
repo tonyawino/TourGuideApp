@@ -16,7 +16,7 @@ public class AttractionActivity extends AppCompatActivity {
         setTitle(attraction.getName());
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new InfoFragment()).commit();
         ViewPager viewPager = findViewById(R.id.viewPager);
-        viewPager.setAdapter(new AttractionPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new AttractionPagerAdapter(getSupportFragmentManager(), this));
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
     }

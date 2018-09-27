@@ -1,5 +1,6 @@
 package com.example.android.tourguideapp;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,8 +8,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 //Manage the info and about fragments of an attraction
 public class AttractionPagerAdapter extends FragmentPagerAdapter {
-    public AttractionPagerAdapter(FragmentManager fm) {
+    private Context context;
+    public AttractionPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
+        this.context=context;
     }
 
     @Override
@@ -30,9 +33,9 @@ public class AttractionPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0)
-            return "Info";
+            return context.getString(R.string.attraction_pager_info);
         else if (position == 1)
-            return "About";
+            return context.getString(R.string.attraction_pager_about);
         else
             return super.getPageTitle(position);
     }

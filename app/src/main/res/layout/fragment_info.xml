@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingBottom="8dp"
+        android:paddingBottom="@dimen/info_paddingBottom"
         android:scaleType="centerCrop"
         tools:src="@drawable/image_about_nairobi" />
 
@@ -19,12 +19,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp">
+        android:paddingBottom="@dimen/info_paddingBottom"
+        android:paddingLeft="@dimen/info_paddingLeft">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/info_icon"
+            android:layout_height="@dimen/info_icon"
             android:src="@drawable/ic_location_city" />
 
         <TextView
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@dimen/info_paddingLeftText"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -44,12 +44,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp">
+        android:paddingBottom="@dimen/info_paddingBottom"
+        android:paddingLeft="@dimen/info_paddingLeft">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/info_icon"
+            android:layout_height="@dimen/info_icon"
             android:src="@drawable/ic_phone" />
 
         <TextView
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:autoLink="phone"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@dimen/info_paddingLeftText"
             android:textColorLink="#000"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -70,12 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp">
+        android:paddingBottom="@dimen/info_paddingBottom"
+        android:paddingLeft="@dimen/info_paddingLeft">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/info_icon"
+            android:layout_height="@dimen/info_icon"
             android:src="@drawable/ic_action_location" />
 
         <TextView
@@ -84,8 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:autoLink="map"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:paddingLeft="@dimen/info_paddingLeftText"
+            android:paddingRight="@dimen/info_paddingLeftText"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -96,12 +96,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp">
+        android:paddingBottom="@dimen/info_paddingBottom"
+        android:paddingLeft="@dimen/info_paddingLeft">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="@dimen/info_icon"
+            android:layout_height="@dimen/info_icon"
             android:src="@drawable/ic_action_clock" />
 
         <TextView
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:autoLink="email"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@dimen/info_paddingLeftText"
             android:textColorLink="#000"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -122,8 +122,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:autoLink="email"
-            android:paddingLeft="8dp"
-            android:text="-"
+            android:paddingLeft="@dimen/info_paddingLeftText"
+            android:text="@string/text_info"
             android:textColorLink="#000"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:autoLink="email"
-            android:paddingLeft="8dp"
+            android:paddingLeft="@dimen/info_paddingLeftText"
             android:textColorLink="#000"
             android:textSize="16sp"
             android:textStyle="bold"

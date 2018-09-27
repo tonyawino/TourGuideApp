@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_paddingBottom">8dp</dimen>
+    <dimen name="info_icon">32dp</dimen>
+    <dimen name="info_paddingLeftText">8dp</dimen>
+    <dimen name="info_paddingLeft">16dp</dimen>
+</resources>
